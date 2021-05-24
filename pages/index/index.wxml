@@ -1,0 +1,42 @@
+<view class="content">
+  <view class="header">
+    <image class="headImg" mode="widthFix" src="../../static/images/headImg.png" />
+    <view class="headContent">
+      <image class="logoName" mode="widthFix" src="../../static/images/logoName.png" />
+      <navigator class="business" url="/pages/business_consulting/index">商务咨询</navigator>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="h1">人脸识别</view>
+    <view class="list">
+      <view class="flex justify-space-between align-items-center navigateToBtn" bindtap="verify" data-type="living">
+        <text class="icon-lunkuohua_renlian iconfont custom-icon" selectable="false" space="false" decode="true"></text>
+        <text>活体检测</text>
+      </view>
+      <view class="flex justify-space-between align-items-center navigateToBtn" bindtap="verify" data-type="identity">
+        <text class="icon-renlianheshen iconfont custom-icon" selectable="false" space="false" decode="true"></text>
+        <text>身份验证</text>
+      </view>
+      <view class="flex justify-space-between align-items-center navigateToBtn" bindtap="verify" data-type="identityIdCard">
+        <text class="icon-renlianheshen iconfont custom-icon" selectable="false" space="false" decode="true"></text>
+        <text>人脸身份核验</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="h1">证照识别</view>
+    <view class="list">
+      <view class="flex justify-space-between align-items-center navigateToBtn" bindtap="verify" data-type="idCard">
+        <text class="icon-credentials_icon iconfont custom-icon" selectable="false" space="false" decode="true"></text>
+        <text>身份证</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="footer">
+  <view class="comp">学谷智能产品</view>
+  <view class="ver">当前版本: V2.0</view>
+</view>

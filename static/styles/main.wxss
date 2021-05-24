@@ -1,0 +1,23 @@
+button {
+  font-size: 32rpx;
+  background-color: #419fff;
+  color: #fff;
+  border: none;
+  border-radius: 8rpx;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between
+}
+
+.justify-space-around {
+  justify-content: space-around
+}
+
+.align-items-center {
+  align-items: center
+}

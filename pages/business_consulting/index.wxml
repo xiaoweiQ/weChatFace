@@ -1,0 +1,39 @@
+<!--miniprogram/pages/business_consulting/index.wxml-->
+<view class="form">
+	<view class="content">
+		<label wx:for="{{formData}}" wx:key="f">
+      <view class="title">
+        <text class="space red" wx:if="{{item.require}}">
+          <block>*</block>
+        </text>
+        {{item.title}}
+      </view>
+			<block wx:if="{{item.nodeType==='input'}}">
+				<input
+					class="{{item.isErr?'error':''}}"
+					placeholder="{{item.placeholder}}"
+					data-index="{{ index }}"
+					type="{{item.type}}"
+					value="{{item.value}}"
+					bindblur="inputVerify"
+					bindinput="inputChange"
+				/>
+			</block>
+			<block wx:elif="{{item.nodeType==='textarea'}}">
+				<textarea
+					class="{{item.isErr?'error':''}}"
+					placeholder="{{item.placeholder}}"
+					data-index="{{ index }}"
+					bindblur="inputVerify"
+					bindinput="inputChange"
+				/>
+			</block>
+			<text class="red">{{ item.errorTip }}</text>
+		</label>
+
+		<label class="tips">注：标<text class="red">*</text>的为必填项</label>
+		<view class="btn">
+			<button class="next" bindtap="submitForm">确认提交</button>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,33 @@
+<view class="form">
+  <view class="content">
+		<label wx:for="{{ formData }}" wx:key="f" class="flex justify-space-between">
+      <text class="title">{{ item.title }}</text>
+      <input
+        id="{{index}}"
+        placeholder="无"
+        type="input"
+        value="{{item.value}}"
+        data-index="{{index}}"
+        bindinput="inputChange"
+        bindconfirm="nextStep"
+        hold-keyboard="{{true}}"
+      />
+    </label>
+    <view>
+      <text>人像面</text>
+      <view class="border mt-10">
+        <image mode="widthFix" src="{{ frontUrl }}" />  
+      </view>
+    </view>
+
+    <view class="mt-20">
+      <text>国徽面</text>
+      <view class="border mt-10">
+        <image mode="widthFix" src="{{ backUrl }}" />
+      </view>
+    </view>
+    <view class="btn">
+			<button class="next" bindtap="nextStep">确定</button>
+		</view>
+	</view>
+</view>

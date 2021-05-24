@@ -1,0 +1,12 @@
+<view class="pluginContent">
+  <view class="img-wrap">
+    <image class="img" src="../../static/images/success.png" mode="widthFix" />
+  </view>
+  <view class="success-title">
+    <text>{{ title }}</text>
+  </view>
+  <view class="success-des">
+    <text>{{ des }}</text>
+  </view>
+  <button class="btn" plain bindtap="back">返回</button>
+</view>

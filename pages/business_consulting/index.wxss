@@ -1,0 +1,2 @@
+/* miniprogram/pages/business_consulting/index.wxss */
+@import "../idVerification/index.wxss";

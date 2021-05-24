@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/idVerification/index",
+    "pages/business_consulting/index",
+    "pages/result/index",
+    "pages/idCardResult/index"
+  ],
+  "plugins": {
+    "shargoodata": {
+      "version": "2.3.1",
+      "provider": "wxe83fe5a4f77efb58"
+    }
+  },
+  "window": {
+    "navigationBarTitleText": "学谷智能",
+    "navigationBarBackgroundColor": "#419FFF",
+    "navigationBarTextStyle": "white",
+    "backgroundColorTop": "#419FFF"
+  },
+  "sitemapLocation": "sitemap.json"
+}
