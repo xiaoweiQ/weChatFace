@@ -43,9 +43,6 @@ Page({
         plugin.ocrStart({
           platformNo: BaseJs.getPlatformNo(),
           token: resJson.data,
-          extraInfo: {
-            isShowCamera: true // 这里的布尔值可以用后端数据库控制，审核通过后，把他变为true即可正常显示
-          },
           url: 'plugin-private://' + BaseJs.getAppid() + '/pages/face/index',
           success: (res) => {
             if (JSON.parse(res).success) {
@@ -65,7 +62,8 @@ Page({
                 token: resJson.data,
                 extraInfo: {
                   idName: name,
-                  idNumber: idCard
+                  idNumber: idCard,
+                  isShowCamera: true // 这里的布尔值可以用后端数据库控制，审核通过后，把他变为true即可正常显示
                 },
                 url: '/pages/result/index',
                 success: res => {
