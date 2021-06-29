@@ -33,7 +33,7 @@ Page({
           }
         })
         wx.navigateTo({
-          url: 'plugin-private://' + BaseJs.getAppid() + '/pages/face/index'
+          url: 'plugin-private://wxfd41bbd0f83ffe83/pages/face/index'
         })
       } else if (type == 'identity') {
         wx.navigateTo({
@@ -43,7 +43,7 @@ Page({
         plugin.ocrStart({
           platformNo: BaseJs.getPlatformNo(),
           token: resJson.data,
-          url: 'plugin-private://' + BaseJs.getAppid() + '/pages/face/index',
+          url: 'plugin-private://wxfd41bbd0f83ffe83/pages/face/index',
           success: (res) => {
             if (JSON.parse(res).success) {
               // 调用身份验证另一个插件
@@ -91,7 +91,7 @@ Page({
           }
         })
         wx.navigateTo({
-          url: 'plugin-private://' + BaseJs.getAppid() + '/pages/idCard/index'
+          url: 'plugin-private://wxfd41bbd0f83ffe83/pages/idCard/index'
         })
       } else if (type === 'idCard') {
         plugin.ocrStart({
@@ -112,7 +112,7 @@ Page({
           }
         })
         wx.navigateTo({
-          url: 'plugin-private://' + BaseJs.getAppid() + '/pages/idCard/index'
+          url: 'plugin-private://wxfd41bbd0f83ffe83/pages/idCard/index'
         })
       }
     })

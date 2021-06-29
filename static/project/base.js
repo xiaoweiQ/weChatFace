@@ -1,6 +1,5 @@
 const globalData = {
   isDev: true, //是否为开发版,false是体验版或正式版
-  appid: 'wxfd41bbd0f83ffe83',
   tokenUrl: 'https://gauss.shargoodata.com/gauss/authorization/sdk/getToken.json',
   platformNo: '*****',
   secretKey: '*****',
@@ -9,10 +8,6 @@ const globalData = {
     des: '',
     data: ''
   }
-}
-
-const getAppid = function() {
-  return globalData.appid
 }
 
 const getTokenUrl = function() {
@@ -78,7 +73,6 @@ const ajaxRequest = (options = {}, cb) => {
 
 module.exports = {
   ajaxRequest,
-  getAppid,
   isCardNo,
   isChinese,
   isEmail,
