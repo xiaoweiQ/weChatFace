@@ -8,8 +8,8 @@
   ],
   "plugins": {
     "shargoodata": {
-      "version": "2.3.1",
-      "provider": "wxe83fe5a4f77efb58"
+      "version": "1.0.1",
+      "provider": "wxfd41bbd0f83ffe83"
     }
   },
   "window": {
